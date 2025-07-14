@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agencia de Coches - Velocidad Total</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1511914265871-bc2d50d99929') no-repeat center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      max-width: 600px;
+    }
+
+    nav {
+      background: black;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4d00;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #servicios {
+      background: #f5f5f5;
+    }
+
+    #servicios h2, #coches h2, #contacto h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      margin: 0 15px 20px;
+      color: #555;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Velocidad Total</h1>
+  <p>Tu agencia de coches deportivos y de lujo. Vive la experiencia de conducir lo mejor.</p>
+</header>
+
+<nav>
+  <a href="#servicios">Servicios</a>
+  <a href="#coches">Coches</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1617944210924-ffb4949d9fc2" alt="Renta de autos deportivos">
+      <h3>Renta de Autos</h3>
+      <p>Alquila coches deportivos por días o semanas con tarifas competitivas.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1571607388903-3310b4e8ecb5" alt="Compra de autos">
+      <h3>Venta de Autos</h3>
+      <p>Coches nuevos y seminuevos de marcas exclusivas con garantía.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Mantenimiento premium">
+      <h3>Mantenimiento Premium</h3>
+      <p>Servicio especializado para mantener tu coche siempre al máximo nivel.</p>
+    </div>
+  </div>
+</section>
+
+<section id="coches">
+  <h2>Nuestros Coches</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603808033192-62249b6aaed1" alt="Ferrari">
+      <h3>Ferrari F8</h3>
+      <p>Potencia extrema y diseño italiano. Vive la velocidad.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1625812078652-77b73ef9620e" alt="Lamborghini">
+      <h3>Lamborghini Huracán</h3>
+      <p>Lujo y adrenalina en cada curva. Disponible para renta o compra.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1614624532983-171c2c82536e" alt="Porsche">
+      <h3>Porsche 911</h3>
+      <p>Equilibrio perfecto entre confort y deportividad.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Escríbenos a <strong>contacto@velocidadtotal.com</strong> o visítanos en nuestras redes sociales.</p>
+</section>
+
+<footer>
+  &copy; 2025 Velocidad Total. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
